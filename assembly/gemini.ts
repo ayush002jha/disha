@@ -7,9 +7,9 @@ import {
 } from "@hypermode/modus-sdk-as/models/openai/chat"
 
 // this model name should match the one defined in the modus.json manifest file
-const modelName: string = "text-generator"
+const modelName: string = "text-gemini"
 
-export function generateTextLlama(instruction: string, prompt: string): string {
+export function generateTextGemini(instruction: string, prompt: string): string {
   const model = models.getModel<OpenAIChatModel>(modelName)
   const input = model.createInput([
     new SystemMessage(instruction),

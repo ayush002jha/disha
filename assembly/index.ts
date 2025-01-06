@@ -3,3 +3,5 @@ export function sayHello(name: string | null = null): string {
 }
 
 export * from "./llama";
+
+export * from "./gemini";
